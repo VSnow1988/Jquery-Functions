@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Jquery Functions</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#hoverfadeout").hover(function(){$("#hoverfadeout").fadeOut(2000);});
+        $("#fadein").ready(function(){$("#fadein").fadeIn(2000);});
+        $("#toggle").click(function(){$("#addclass").toggle();});
+        $("#addclass").hover(function(){$("#toggle").addClass("red");});
+        $("#slideup").click(function(){$("#slideup").slideUp(1000);});
+        $("#slidedown").hover(function(){$("#slideup").text("The Electric Slide.");});
+        $("#slidedown").click(function(){$("#slideup").slideDown(1000);});
+        $("#clickme").click(function(){$("#show").show();});
+        $("#after").click(function(){$("#after").after("SCUM! AAAAH! SCUM!");});
+        $("#before").click(function(){$("#before").before("<h2>WE LOVE SATAN AND WE WANNA EAT BABIES!</h2>");});
+        $("#text").click(function(){$("#text").text("Vampire Goblins! Clockwork Elves! I seen em!");});
+    });
+    </script>
+  </head>
+  <body>
+    <header><h1>Jquery Functions</h1></header>
+    <section>
+      <div id="hoverfadeout">
+        Hover over me to fade out.
+      </div>
+      <div id="clickme"><span>There's something hidden<br> to the right... click<br> to make it show up!</span></div>
+      <div id="show">
+        Here I am.
+      </div>
+      <div id="addclass">
+        Hover over me to add a class and change the look to one of these boxes...
+      </div>
+    </section>
+    <section>
+      <div id="fadein">
+        I'm a fade-in element.
+      </div>
+      <div id="toggle">
+        Let me get back at that box...<br>click me to toggle it off and on!
+      </div>
+      <div id="before">
+        Click me to see before in action.
+      </div>
+      <div id="slideup">
+        Click me...then click below.
+      </div>
+    </section>
+    <section>
+        <div id="after">
+          Now click me to see after in action.
+        </div>
+        <div id="html">
+          Click here to see the innerhtml change.
+        </div>
+        <div id="text">
+          Hover over here to see text change.
+        </div>
+        <div id="slidedown">
+          I'm gonna teach you...
+        </div>
+    </section>
+    <section>
+
+
+
+    </section>
+
+  </body>
+</html>
